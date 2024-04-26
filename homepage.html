@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.freshparty.com</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins&family=Roboto:wght@400;500&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--slideshow-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--Footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="margin-bottom: 75px;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/balloons.png" alt="logo" width="50px" height="50px">
+                    <span class="ms-2 d-none d-lg-inline fresh-party-text">Fresh Party</span>
+                </a>
+
+                <!-- Button for mobile view toggling -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center align-items-center" style="font-size: 20px;">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="services.html">Service provided</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" href="packages.html">
+                                Package details
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="packages.html">Available Packages</a></li>
+                                <li><a class="dropdown-item" href="package.html">Customized Packages</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="help.html">Help & Advice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="aboutus.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="login.html">Login/Signup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <img src="img/search.png" width="30px" height="30px">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <label id="user"></label>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 custom-input text-dark bg-light" type="search"
+                            placeholder="Search..." aria-label="Search" id="srh">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="text-center d-lg-none">
+                    <span class="d-inline-block mt-3 ">Fresh Party</span>
+                </div>
+            </div>
+
+        </nav>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+
+
+    </header>
+
+    <!--hero section-->
+    <!-- Swiper -->
+    <div class="hero bg-black">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+            <div class="parallax-bg" data-swiper-parallax="-30%">
+                <video src="video/video8.mp4" loop muted autoplay></video>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                    <div class="row item-body">
+                        <div class="col-md-6 hero-text">
+                            <div class="title" data-swiper-parallax="-300" id="clock"></div>
+                            <div class="title mt-4 mt-md-0" data-swiper-parallax="-300">FRESH PARTY</div>
+                            <div class="subtitle" data-swiper-parallax="-200">" Trust us to orchestrate a celebration
+                                that reflects your love story, leaving you and your guests with cherished memories that
+                                last a lifetime. </div>
+                            <div class="text" data-swiper-parallax="-100">
+                                <a href="packages.html"><button>LEARN MORE</button></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <video src="video/video5.mp4" autoplay loop muted width="100%" class="hero-image"></video>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="swiper-slide">
+
+                    <div class="row item-body">
+                        <div class="col-md-6 hero-text">
+                            <div class="title" data-swiper-parallax="-300" id="clock"></div>
+                            <div class="title mt-4 mt-md-0" data-swiper-parallax="-300">FRESH PARTY</div>
+                            <div class="subtitle" data-swiper-parallax="-200">"
+                                Looking for a stress-free way to celebrate? Our birthday party service takes the hassle
+                                out of planning and lets you focus on enjoying the day. "
+                            </div>
+                            <div class="text" data-swiper-parallax="-100">
+                                <a href="packages.html"><button>LEARN MORE</button></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <video src="video/video6.mp4" autoplay loop muted width="100%" class="hero-image"></video>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="swiper-slide">
+
+                    <div class="row item-body">
+                        <div class="col-md-6 hero-text">
+                            <div class="title" data-swiper-parallax="-300" id="clock"></div>
+                            <div class="title mt-4 mt-md-0" data-swiper-parallax="-300">FRESH PARTY</div>
+                            <div class="subtitle" data-swiper-parallax="-200">" Trust us to orchestrate a celebration
+                                that reflects your love story, leaving you and your guests with cherished memories that
+                                last a lifetime. </div>
+                            <div class="text" data-swiper-parallax="-100">
+                                <a href="packages.html"><button>LEARN MORE</button></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <video src="video/video7.mp4" autoplay loop muted width="100%" class="hero-image"></video>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="homepage.js"></script>
+
+    <!-- Swiper Initialization Script -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+
+    <!-- Subscribe form-->
+    <div>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h2>Subscribe Form</h2>
+
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email address..."
+                                aria-label="Your Email" aria-describedby="subscribe-btn">
+                            <button class="btn btn-primary custom-btn" type="button" id="subscribe-btn">
+                                <i class="bi bi-envelope-fill me-2"></i> Join
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!--carousel 1-->
+                <div class="container-fluid px-3 ps pb-4">
+                    <div class="row customCarousel pt-5">
+                        <div class="col-md-5 d-flex align-items-center">
+                            <div class="heading ps-5 reveal">
+                                <h2 class="fresh-party-text" style="margin-bottom: 20px;">Recent Highlights</h2>
+                                <p>Our recent events stand testament to our passion for perfection and creativity in
+                                    every celebration. Explore snapshots of our latest gatherings!</p>
+                                <a href="pack.html"><button class="Learnmore">LEARN MORE</button></a>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+
+                            <div class="slide-container swiper reveal3">
+                                <div class="slide-content ">
+                                    <div class="card-wrapper swiper-wrapper">
+                                        <div class="swiper-slide1">
+                                            <div class="item-card">
+                                                <img src="img/Recent.jpeg" alt="" class="slide-image">
+                                                <div class="description text-center" style="margin-top: 20px;">
+                                                    Neko's 16th Birthday
+                                                    <h6 class="text-secondary">2022 July</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="homepage.js"></script>
+
+                    <!--end-->
+
+
+                    <!-- description -->
+
+                    <div style="background-color: lightsteelblue;">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center py-5">
+                                    <h1>The Fresh Party Way</h1>
+                                    <p class="custom-font">Who We Are</p>
+                                    <p>We founded Fresh Party with one goal in mind: to design and produce creative and
+                                        unforgettable events for every occasion. From small intimate affairs to
+                                        large-scale
+                                        parties, we strive to execute events that not only aim to impress but also
+                                        create
+                                        unique experiences for our clients and their guests that last long after the fun
+                                        is
+                                        over.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section with image and text -->
+                <div class="container mt-4" style="margin-bottom: 0px;">
+                    <div class="row">
+                        <!-- Left column for the image -->
+                        <div class="col-md-6">
+                            <img src="img/ss10.png" class="img-fluid" alt="My Image"
+                                style="width: 1000px; height: 600px; margin-right: 30px;">
+                        </div>
+                        <!-- Right column for the text -->
+                        <div class="col-md-6 text-center">
+                            <h2>Event Highlights</h2>
+                            <br><br>
+                            <div class="text-center">
+                                <h5>Corporate Events</h5>
+                                <p class="custom-font">Yangon</p>
+                            </div>
+
+                            <div class="text-center">
+                                <h5>Wedding</h5>
+                                <p class="custom-font">Yangon</p>
+                            </div>
+
+                            <div class="text-center">
+                                <h5>Private Party</h5>
+                                <p class="custom-font">Mandalay</p>
+                            </div>
+
+                            <div class="text-center">
+                                <h5>Theme Events</h5>
+                                <p class="custom-font">NayPyiTaw</p>
+                            </div>
+
+                            <div class="text-center">
+                                <h5>Anniversaries</h5>
+                                <p class="custom-font">Kalaw</p>
+                            </div>
+
+                            <div class="text-center">
+                                <h5>Social Gatherings</h5>
+                                <p class="custom-font">Mandalay</p>
+                            </div>
+
+                            <div class="text-center">
+                                <h5>Graduation Parties</h5>
+                                <p class="custom-font">Yangon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Google map-->
+                <div style="width: 100%; height: 400px; margin-top: 30px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.201265226217!2d96.12863370000004!3d16.816368599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb34335a92f5%3A0xea3210d0410309d7!2sTimes%20City%20Yangon!5e0!3m2!1sen!2smm!4v1703482773250!5m2!1sen!2smm"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <footer class="bg-white text-black py-4">
+
+                    <div class="container">
+                        <div class="row text-center justify-content-center">
+                            <!-- 1st row: Stay social... Follow Us! -->
+                            <div class="col-12">
+                                <p class="followus">Stay social... Follow Us!</p>
+                            </div>
+                        </div>
+
+                        <section class="footer">
+                            <div class="footer-row">
+                                <div class="footer-col">
+                                    <h4 style="margin-left: 30px;">Info</h4>
+                                    <ul class="links">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Compressions</a></li>
+                                        <li><a href="#">Service</a></li>
+                                        <li><a href="#">+95 97462747</a></li>
+                                        <li><a href="#">freshparty@gmial.com</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-col">
+                                    <h4 style="margin-left: 30px;">Explore</h4>
+                                    <ul class="links">
+                                        <li><a href="#">Free Designs</a></li>
+                                        <li><a href="#">Latest Designs</a></li>
+                                        <li><a href="#">Themes</a></li>
+                                        <li><a href="#">Popular Designs</a></li>
+                                        <li><a href="#">Art Skills</a></li>
+                                        <li><a href="#">New Uploads</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-col">
+                                    <h4 style="margin-left: 30px;">Legal</h4>
+                                    <ul class="links">
+                                        <li><a href="#">Customer Agreement</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">GDPR</a></li>
+                                        <li><a href="#">Security</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                        <li><a href="#">Media Kit</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="footer-col">
+                                    <h4>Newsletter</h4>
+                                    <p>
+                                        Subscribe to our newsletter for a weekly dose
+                                        of news, updates, helpful tips, and
+                                        exclusive offers.
+                                    </p>
+                                    <form action="#">
+                                        <input type="text" placeholder="Your email" required>
+                                        <button type="submit" style="color: white;">SUBSCRIBE</button>
+                                    </form>
+                                    <div class="icons">
+                                        <a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="https://twitter.com/" target="_blank"><i
+                                                class="fa-brands fa-twitter"></i></a>
+                                        <a href="https://www.linkedin.com/feed/" target="_blank"><i
+                                                class="fa-brands fa-linkedin"></i></a>
+                                        <a href="https://github.com/" target="_blank"><i
+                                                class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+.fresh-party-text {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: xx-large;
+}
+
+.fresh-party-font {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 50px;
+}
+
+/* Text On Side of Image Container */
+.text-side-image-con {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.text-side-image-con>.image,
+.text-side-image-con>.wrapper>.content {
+  grid-row: 1 / 2;
+}
+
+.text-side-image-con>.image {
+  grid-column: 1 / 11;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.text-side-image-con>.wrapper {
+  z-index: 10;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #eee;
+  display: grid;
+  grid-column: 7 / 13;
+  grid-row: 1 / 2;
+  grid-template-columns: repeat(5, 1fr);
+  height: fit-content;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding-bottom: 15px;
+}
+
+.text-side-image-con>.wrapper>.content {
+  align-self: center;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  margin: 0;
+  padding: 50px 10px 50px 10px;
+}
+
+.text-side-image-con>.wrapper>.btn {
+  align-self: last baseline;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  margin: 0 auto 0 auto;
+  width: fit-content;
+}
+
+/*subscribe btn color*/
+.custom-btn {
+  background-color: black !important;
+}
+
+.mt-4 {
+  margin-top: 15rem !important;
+  /* Adjust the margin-top value as needed */
+  margin-bottom: 3rem;
+}
+
+.custom-font {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 20px;
+}
+
+.followus {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 30px;
+}
+
+.icon-link {
+  margin: 0 10px;
+}
+
+.text-decor {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+/* Customizing the button */
+.custom-button {
+  width: 100px !important;
+  /* Set your desired width */
+  background-color: black !important;
+  color: white;
+  border: none !important;
+}
+
+.custom-button:hover {
+  background-color: #333 !important;
+  /* Darker shade on hover */
+}
+
+.icon-link {
+  margin: 0 10px;
+}
+
+.custom-img {
+  width: calc(20% - 10px);
+  /* 20% width with a little space in between */
+  margin: 5px;
+  /* Space between images */
+  position: relative;
+}
+
+/* Styles for the slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide all slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Fade animation for slides */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Styles for text over images */
+.text-over-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Background color with 50% opacity */
+  padding: 10px;
+  /* Add padding for better readability */
+}
+
+.read-more,
+.text-decor {
+  font-size: 18px;
+  /* Adjust the font size as needed */
+  margin: 0;
+}
+
+.navbar-nav .nav-link {
+
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu a.dropdown-item {
+  text-decoration: none;
+  /* Remove underlines from dropdown items */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  /* Adjust the thickness of the underline */
+  left: 0;
+  width: 0;
+  height: 2px;
+  /* Set the height/thickness of the underline */
+  background-color: #000;
+  transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  /* Show the underline on hover */
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  transform-style: preserve-3d;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Footer*/
+
+.footer {
+  margin-top: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 2000px;
+  /*adjust this*/
+  width: 180%;
+  background: white;
+  border-radius: 6px;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footer-col .links li a:hover {
+  color: black;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: grey;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6;
+  caret-color: black;
+  color: black;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+.footer-col form button {
+  background: black;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: black;
+}
+
+.footer-col .icons i:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}

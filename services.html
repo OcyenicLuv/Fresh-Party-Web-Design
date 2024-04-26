@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.freshparty.com</title>
+    <link rel="stylesheet" href="services.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins&family=Roboto:wght@400;500&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--Footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="margin-bottom: 75px;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/balloons.png" alt="logo" width="50px" height="50px">
+                    <span class="ms-2 d-none d-lg-inline fresh-party-text">Fresh Party</span>
+                </a>
+
+                <!-- Button for mobile view toggling -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center align-items-center" style="font-size: 20px;">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="services.html">Service provided</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" href="packages.html">
+                                Package details
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="packages.html">Available Packages</a></li>
+                                <li><a class="dropdown-item" href="package.html">Customized Packages</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="help.html">Help & Advice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="aboutus.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="login.html">Login/Signup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <img src="img/search.png" width="30px" height="30px">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <label id="user"></label>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 custom-input text-dark bg-light" type="search"
+                            placeholder="Search..." aria-label="Search" id="srh">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="text-center d-lg-none">
+                    <span class="d-inline-block mt-3 ">Fresh Party</span>
+                </div>
+            </div>
+
+        </nav>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+
+
+    </header>
+
+    <!--images-->
+    <!--js file -->
+    <div class="service-row">
+        <div class="service-image">
+            <div class="col-lg-12 col-md-6 col-sm-3">
+                <video autoplay muted loop class="custom-video" style="height: 800px;">
+                    <source src="video/themevic.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="overlay-text">Theme events</div>
+        </div>
+        <div class="service-text">
+            <h3>"Fresh Party Themes: Elevate Your Celebration with Unforgettable Themed Events!"</h3>
+            <p>From Enchanted Garden Soirees to Retro Rewind Bashes, we transform gatherings into captivating
+                experiences. Let us bring your vision to life and make your celebration truly extraordinary.
+            </p>
+            <a href="#" class="service-button" onclick="showPopup(1)">Learn More</a>
+        </div>
+    </div>
+    <script src="services.js"></script>
+
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup(1)">&times;</span>
+            <!-- Popup content -->
+            <h2>Additional Details</h2>
+            <p>Choose from a range of immersive themes:</p>
+            <ul>
+                <li>Enchanted Garden Soiree</li>
+                <li>Retro Rewind Bash</li>
+                <li>Under the Stars Gala</li>
+                <li>Hollywood Glam Extravaganza</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-text">
+            <h3>"Celebrate in Style with Fresh Party!"</h3>
+            <p>Our range of celebration events is designed to make every moment special, ensuring your milestones are
+                marked with elegance and flair.</p>
+            <a href="#" class="service-button" onclick="showPopup(2)">Learn More</a>
+        </div>
+        <div class="service-image">
+            <video autoplay muted loop class="custom-video" style="height: 800px;">
+                <source src="video/celebrations.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-text">Celebrations</div>
+        </div>
+    </div>
+    <script src="services.js"></script>
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup(2)">&times;</span>
+            <!-- Popup content -->
+            <h2>Additional Details</h2>
+            <p>From intimate gatherings to grand soirees,</p>
+            <ul>
+                <li>Birthday Bashes</li>
+                <li>Anniversary Galas</li>
+                <li>Graduation Parties</li>
+                <li>Corporate Events</li>
+                <li>Holiday Festivities</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-image">
+            <video autoplay muted loop class="custom-video" style="height: 800px;">
+                <source src="video/entertainment.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-text">Entertainment</div>
+        </div>
+        <div class="service-text">
+            <h3>"Unforgettable Entertainment Experiences with Fresh Party!"</h3>
+            <p>t Fresh Party, we bring entertainment to life, transforming events into exhilarating experiences that
+                captivate and delight. Our range of entertainment events promises to infuse excitement and energy into
+                every occasion, ensuring your guests are entertained and engaged.</p>
+            <a href="#" class="service-button" onclick="showPopup(3)">Learn More</a>
+        </div>
+    </div>
+
+    <script src="services.js"></script>
+
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup(3)">&times;</span>
+            <!-- Popup content -->
+            <h2>Additional Details</h2>
+            <p>Explore our diverse entertainment offerings;
+            </p>
+            <ul>
+                <li>Live Performances</li>
+                <li>Themed Entertainment</li>
+                <li>Interactive Games & Activities</li>
+                <li>Specialty Acts - acrobatics,fire performers, stilt walkers, circus performers </li>
+                <li>Magical Moments - magic shows, illusionists </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-text">
+            <h3>"Crafting Unforgettable Wedding Experiences with Fresh Party!"</h3>
+            <p>At Fresh Party, we understand that your wedding day is a celebration of love, and we're dedicated to
+                making it an enchanting affair that reflects your unique story. Our wedding events are crafted with
+                meticulous care and attention to detail</p>
+            <a href="#" class="service-button" onclick="showPopup(4)">Learn More</a>
+        </div>
+        <div class="service-image">
+            <video autoplay muted loop class="custom-video" style="height: 800px;">
+                <source src="video/wed.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-text">Wedding</div>
+        </div>
+    </div>
+
+    <script src="services.js"></script>
+
+    <div id="popup4" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup(4)">&times;</span>
+            <!-- Popup content -->
+            <h2>Additional Details</h2>
+            <p>Explore our range of wedding services:</p>
+            <ul>
+                <li>Personalized Planning</li>
+                <li>Stunning Décor & Design</li>
+                <li>Tailored Themes & Concepts</li>
+                <li>Entertainment & Music</li>
+                <li>Gourmet Delights</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- other services -->
+
+
+
+    <div class="text-center my-4">
+        <h1 class="fw-bold">Other services</h1>
+        <p style="font-size: 20px; margin-top: 20px;">Modern, Detailed and Experiental</p>
+        <div class="underline"></div>
+
+    </div>
+
+    <div class="container k-collect reveal3">
+        <div class="row">
+            <div class="col-md-3 col-6 morph-col">
+                <img src="img/floral.jpeg" height="400px" />
+                <div class="morph-layer">
+                    <h3>Floral Setup</h3><br>
+                    <p>Check out the trending styles, and get them while they’re popular!</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6 morph-col">
+                <img src="img/customized theme.jpg" height="400px" />
+                <div class="morph-layer">
+                    <h3>Themes and Props</h3><br>
+                    <p>Whether it's a themed party, corporate event, or a dreamy wedding, our curated collection ensures
+                        every detail shines!</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6 morph-col">
+                <img src="img/card.jpg" height="400px" />
+                <div class="morph-layer">
+                    <h3>Invitations</h3><br>
+                    <p>From elegant weddings to lively celebrations, we offer a range of customizable designs that
+                        capture the essence of your special occasions!</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6 morph-col">
+                <img src="img/fundariser.jpeg" height="400px" />
+                <div class="morph-layer">
+                    <h3>Fundraisers</h3><br>
+                    <p>Join us in making a difference! Unlock the power of giving with our service website</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <footer class="bg-white text-black py-4">
+
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <!-- 1st row: Stay social... Follow Us! -->
+                <div class="col-12">
+                    <p class="followus">Stay social... Follow Us!</p>
+                </div>
+            </div>
+            <section class="footer">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4 style="margin-left: 30px;">Info</h4>
+                        <ul class="links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Compressions</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">+95 97462747</a></li>
+                            <li><a href="#">freshparty@gmial.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 style="margin-left: 30px;">Explore</h4>
+                        <ul class="links">
+                            <li><a href="#">Free Designs</a></li>
+                            <li><a href="#">Latest Designs</a></li>
+                            <li><a href="#">Themes</a></li>
+                            <li><a href="#">Popular Designs</a></li>
+                            <li><a href="#">Art Skills</a></li>
+                            <li><a href="#">New Uploads</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 style="margin-left: 30px;">Legal</h4>
+                        <ul class="links">
+                            <li><a href="#">Customer Agreement</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">GDPR</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Media Kit</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Newsletter</h4>
+                        <p>
+                            Subscribe to our newsletter for a weekly dose
+                            of news, updates, helpful tips, and
+                            exclusive offers.
+                        </p>
+                        <form action="#">
+                            <input type="text" placeholder="Your email" required>
+                            <button type="submit" style="color: white;">SUBSCRIBE</button>
+                        </form>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/feed/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

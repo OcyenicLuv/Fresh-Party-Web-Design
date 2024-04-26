@@ -1,0 +1,575 @@
+.fresh-party-font {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-section {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    /* Adjust border properties as needed */
+    max-width: 500px;
+    /* Adjust max-width as per your image */
+    height: auto;
+}
+
+
+#txt1 {
+    font-size: 10;
+    color: white;
+}
+
+#name {
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 3px 1px 2px yellow;
+    animation-name: txtAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes txtAnimation {
+    0% {
+        text-shadow: 3px 1px 2px yellow;
+    }
+
+    50% {
+        text-shadow: 3px 1px 2px white;
+    }
+
+    100% {
+        text-shadow: 3px 1px 2px black;
+    }
+}
+
+#td1 {
+    text-align: left;
+}
+
+#head1 {
+    text-align: center;
+}
+
+#list {
+    font-size: x-large;
+    font-family: Berlin Sans FB;
+    color: black;
+}
+
+#img1 {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+#para {
+    text-align: justify;
+    width: 500px;
+}
+
+.form {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px 10px;
+    color: white;
+    background-color: #363535;
+    font-family: "Arial";
+}
+
+.border1 {
+    border-radius: 40px 40px;
+    background: black;
+    border-color: #fff;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+
+#name1 {
+    font-family: Goudy Old Style;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+
+#srh {
+    width: 150px;
+    background-color: #4c4c4d;
+    color: #fff;
+}
+
+#deco {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+#head2 {
+    text-align: left;
+}
+
+#para1 {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+#title {
+    margin: auto;
+    text-align: center;
+}
+
+#title1 {
+    margin: auto;
+}
+
+#para2 {
+    text-align: center;
+    margin: auto;
+    width: 950px;
+}
+
+.custom-video {
+    height: 500px;
+    /* Set your desired height here */
+    width: 100%;
+    /* Ensure full width within the column */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover container */
+}
+
+
+/*meet team*/
+.custom-video1 {
+    width: 1200px;
+    height: 500px;
+    border-radius: 0%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 40px;
+    cursor: pointer;
+    margin-top: -40px;
+}
+
+.video-container {
+    position: relative;
+    width: 200px;
+    /* Adjust size as needed */
+    height: 200px;
+    /* Adjust size as needed */
+    display: block;
+    margin: 0 auto;
+    /* Centers the video */
+    border-radius: 50%;
+    /* Creates a rounded shape */
+    overflow: hidden;
+    /* Hides any content that overflows the container */
+}
+
+.click-overlay {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*end*/
+
+
+.custom-btn {
+    background-color: black !important;
+    color: white !important;
+    padding: 10px !important;
+    margin: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: white !important;
+    /* Change background color on hover */
+    color: black !important;
+    /* Change text color on hover */
+}
+
+.video-row {
+    /* Add space below the video row */
+    margin-top: 20px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Add this CSS for the hover effect */
+.card-img-top {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+
+/* Apply animation to carousel-caption */
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    animation: pop-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    color: white;
+}
+
+/* Animation */
+@keyframes pop-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styles for the first section */
+.pic-container {
+    display: flex;
+    align-items: center;
+}
+
+.pic1 {
+    flex: 0 0 60%;
+    /* Adjust the width of the image */
+}
+
+.pic1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a shadow to the image */
+}
+
+.pic1-caption {
+    flex: 0 0 40%;
+    /* Adjust the width of the caption */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Styles for the second section */
+.vid-caption {
+    flex: 0 0 60%;
+    /* Adjust the width of the caption */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vid {
+    flex: 0 0 40%;
+    /* Adjust the width of the video */
+}
+
+.vid video {
+    width: 100%;
+    height: 100%;
+    /* Set video height to fill its container */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a shadow to the video */
+}
+
+/* Styles for the third section */
+.pic2-container {
+    display: flex;
+    align-items: center;
+}
+
+.pic2-caption {
+    flex: 0 0 40%;
+    /* Adjust the width of the caption */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pic2 {
+    flex: 0 0 60%;
+    /* Adjust the width of the image */
+}
+
+.pic2 img {
+    width: 100%;
+    height: 100%;
+    /* Set image height to fill its container */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a shadow to the image */
+}
+
+/*highlight animation*/
+.highlight-animation {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Create the pseudo-element for the animation */
+.highlight-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    /* Set the highlight color */
+    z-index: -1;
+    /* Move the pseudo-element behind the text */
+    opacity: 0;
+    animation: highlight 2s ease-in-out infinite alternate;
+    /* Continuous animation */
+}
+
+/* Define the animation keyframes */
+@keyframes highlight {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu a.dropdown-item {
+    text-decoration: none;
+    /* Remove underlines from dropdown items */
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    /* Adjust the thickness of the underline */
+    left: 0;
+    width: 0;
+    height: 2px;
+    /* Set the height/thickness of the underline */
+    background-color: #000;
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    /* Show the underline on hover */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fresh-party-text {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: xx-large;
+}
+
+.fresh-party-font {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 50px;
+}
+
+/*Footer*/
+
+.footer {
+    margin-top: 3200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1280px;
+    /*adjust this*/
+    width: 120%;
+    background: white;
+    border-radius: 6px;
+}
+
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer-col .links {
+    margin-top: 20px;
+}
+
+.footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.footer-col .links li a:hover {
+    color: black;
+}
+
+.footer-col p {
+    margin: 20px 0;
+    color: grey;
+    max-width: 300px;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6;
+    caret-color: black;
+    color: black;
+    padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+    color: #ccc;
+}
+
+.footer-col form button {
+    background: black;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+    background: #cecccc;
+}
+
+.footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.footer-col .icons i {
+    color: black;
+}
+
+.footer-col .icons i:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .footer .footer-row {
+        padding: 20px;
+        gap: 1rem;
+    }
+
+    .footer-col form {
+        display: block;
+    }
+
+    .footer-col form :where(input, button) {
+        width: 100%;
+    }
+
+    .footer-col form button {
+        margin: 10px 0 0 0;
+    }
+}
+
+.followus {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 30px;
+}
